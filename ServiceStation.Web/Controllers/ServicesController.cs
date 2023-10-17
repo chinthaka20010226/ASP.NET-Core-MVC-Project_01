@@ -4,12 +4,9 @@ namespace ServiceStation.Web.Controllers
 {
     public class ServicesController : Controller
     {
-        public String HelloWorld() {
-            return "This is a ServicesController";
-        } 
+        public IActionResult Index()
+        {
+            return View();
+        }
     }
-
-    // MVC Handller,
-    //var servicesController = new ServicesController();
-    //servicesController.HelloWorld();
 }
